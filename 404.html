@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Boundless Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // GitHub Pages serves this file for any unknown path. Remember where the visitor wanted to go, then load the
+      // app at the site root; index.html restores the path so deep links like /map/cell-shapes work.
+      (function () {
+        var onPages = location.hostname.slice(-10) === '.github.io';
+        var parts = location.pathname.split('/');
+        var base = parts.slice(0, onPages ? 2 : 1).join('/') + '/';
+        try { sessionStorage.setItem('boundless-redirect', location.pathname + location.search + location.hash); } catch (e) {}
+        location.replace(base);
+      })();
+    </script>
+  </head>
+  <body style="background:#03050b;color:#9fd;font:14px system-ui">Redirecting&hellip;</body>
+</html>
