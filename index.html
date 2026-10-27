@@ -6,7 +6,7 @@
     <title>Boundless Lab</title>
     <meta
       name="description"
-      content="Live, modular demos of Boundless, a paced strategy game on a sectored Voronoi network."
+      content="Live, paused-by-default demos of Boundless, a paced top-down action RPG about crossing a sectored Voronoi network."
     />
     <link rel="icon" type="image/svg+xml" href="/boundless-lab/favicon.svg" />
     <script>
@@ -21,16 +21,17 @@
         } catch (e) {}
       })();
     </script>
-    <script type="module" crossorigin src="/boundless-lab/assets/lab-DWjlD6AT.js"></script>
+    <script type="module" crossorigin src="/boundless-lab/assets/lab-D1iEoh-J.js"></script>
     <link rel="modulepreload" crossorigin href="/boundless-lab/assets/brand-DfGe00kB.js">
-    <link rel="stylesheet" crossorigin href="/boundless-lab/assets/lab-ysrfCuCP.css">
+    <link rel="stylesheet" crossorigin href="/boundless-lab/assets/lab-_XhutGGa.css">
   </head>
   <body>
     <header class="topbar">
       <a class="brand" data-nav href="/">BOUNDLESS<span>LAB</span></a>
       <nav id="crumbs" aria-label="Breadcrumb"></nav>
       <div class="prog">
-        <span id="progress"></span><i><b id="progress-bar"></b></i>
+        <span id="progress"></span>
+        <span id="perf" class="perf" title="Worst frame in the last second, longest recent job, jobs queued"></span>
       </div>
       <a id="play" class="btn" href="/play/">Play the prototype &rarr;</a>
     </header>
@@ -40,18 +41,18 @@
       <main>
         <section class="hero">
           <p class="eyebrow">Live design lab</p>
-          <h1>A War of Agents on a Governed Network.</h1>
+          <h1>Cross the network. Weigh every move.</h1>
           <p class="lede">
-            Boundless Network is a paced, readable strategy game. This page
-            grows with it: every piece of the game appears below as a live demo
-            the moment it is built. Scroll, or jump to any piece by its path.
+            Boundless is a paced, top-down action RPG about traversal. Every
+            piece of the game is a live demo below, grouped by the pipeline that
+            builds it: World, Actors, Perception, Systems. Each starts paused;
+            press Run, or Step through its named stages.
           </p>
         </section>
         <div id="banner" class="banner" hidden></div>
         <div id="feed"></div>
         <footer class="foot">
-          Boundless Lab &middot; a work in progress &middot; pieces unlock as
-          they are built.
+          Boundless Lab &middot; every demo is paused until you run it.
         </footer>
       </main>
     </div>

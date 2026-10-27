@@ -4,9 +4,9 @@
 **Live site: https://techdevgroup.github.io/boundless-lab/**
 
 Live, modular demos of **Boundless**, a paced top-down action RPG about crossing a hostile network.
-Every piece of the game appears as an interactive demo the moment it is built.
+Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused, built on the live game configuration.
 
-Status: 15 of 21 pieces live · 28 proven concepts · 3 prototypes · 13 ideas.
+18 pieces in 7 chapters · 38 proven concepts · 7 prototypes · 11 ideas.
 
 ## Pieces
 
@@ -14,42 +14,42 @@ Status: 15 of 21 pieces live · 28 proven concepts · 3 prototypes · 13 ideas.
 
 - [The pitch](https://techdevgroup.github.io/boundless-lab/overview/pitch): A paced, top-down action RPG about crossing a hostile network: a silent war of weighed choices.
 
-### Terrain generation
+### World
 
-- [Cell shapes](https://techdevgroup.github.io/boundless-lab/terrain/cell-shapes): The atom: one Voronoi patch from a sheared lattice. Diamonds, irregular pentagons and hexagons.
-- [The site field (no library)](https://techdevgroup.github.io/boundless-lab/terrain/tile-library): The pre-computed tile library was replaced by one global hashed site field. Flush cells, irregular sectors and a live proof that independently generated sectors share every border edge.
-- [Wall mask experiments](https://techdevgroup.github.io/boundless-lab/terrain/wall-generators): Cellular automata, BSP partition and obstacle clusters on a single patch. The early experiments behind the area styles (the game now paints whole sectors with the styles in assembly).
-- [Generation passes](https://techdevgroup.github.io/boundless-lab/terrain/assembly): Cells and sectors, coarse graph, shared wall bands with gate bridges, area styles, lanes and bulk, smoothing. Step through the passes and switch the density / style preset.
-- [Streaming the unbounded world](https://techdevgroup.github.io/boundless-lab/terrain/streaming): A probe walks and the terrain is generated around it by tier (COARSE, NAV, RENDER, DETAIL) with LRU caches; a far route touches only the sectors it crosses.
+- [The site field](https://techdevgroup.github.io/boundless-lab/world/site-field): One hashed site per lattice cell, shown on the live terrain. Jitter and window size are the controlled variables; neighbouring sectors generated alone share every border edge.
+- [Generation passes](https://techdevgroup.github.io/boundless-lab/world/passes): Cells and sectors, the coarse graph, wall bands with gate bridges, area styles, curtains and openings, smoothing: step through the passes on the live terrain, then try any density preset.
+- [Sector partitions](https://techdevgroup.github.io/boundless-lab/world/partitions): The hex lattice and its domain-warped organic variant side by side on the otherwise live configuration (the partition is the one variable), with measured connectivity guarantees, outline shape and wall share (computed in a worker).
+- [Level layer](https://techdevgroup.github.io/boundless-lab/world/level): The level layer of the live game: zones dealt from seeded decks, field fences with gaps and posts, and stamped fixtures; the window grows ring by ring, as a player would stream it.
+- [Sectors and gates](https://techdevgroup.github.io/boundless-lab/world/sectors-gates): The live board: walled sector borders, gates only where they mean something, solid obstacles and a sealed core. Click any cell to route to it.
+- [The Network Board](https://techdevgroup.github.io/boundless-lab/world/glass-board): The live board in 3D: glass tiles, glowing walls and contoured wall masses. Run to light the board; click it to take the camera.
 
-### The board
+### Actors
 
-- [Sectors and gates](https://techdevgroup.github.io/boundless-lab/board/sectors-gates): Strict sector walls, procedural gates, solid obstacles and a sealed core. Click any cell to route to it.
-- [The Network Board](https://techdevgroup.github.io/boundless-lab/board/glass-board): The same board in 3D: glass tiles, glowing walls and contoured wall masses. Click it to take the camera.
+- [Movement, routes and the companion](https://techdevgroup.github.io/boundless-lab/actors/companion): Fixed 60 Hz motion drawn between ticks, funnelled and string-pulled any-angle routes across the live board, a follower that holds its station without teleporting, and standing orders.
+
+### Perception
+
+- [Scan waves and echoes](https://techdevgroup.github.io/boundless-lab/perception/scan-waves): A ping spreads over the live board's cell graph; each source it reaches answers with a second wave, replayed backwards to the listener. Mask fields hide, garble or fake what returns.
+- [Fog of war](https://techdevgroup.github.io/boundless-lab/perception/fog-of-war): Unseen, explored and visible from the avatar and the companion by polygonal line of sight on the live board; a ping is remembered for a moment without being seen.
+- [Streaming the unbounded world](https://techdevgroup.github.io/boundless-lab/perception/streaming): A walker crosses the live world while sectors are generated ahead of it by tier (coarse, nav, render, detail) under a per-frame budget; a far route touches only the sectors it crosses.
+
+### Systems
+
+- [Mechanics session](https://techdevgroup.github.io/boundless-lab/systems/mechanics): Integrity, Cycles and Exposure move as skills are used; the risk preview agrees with the result, consequences fill a ledger, and loot is a source, not a tree.
+- [Influence layer](https://techdevgroup.github.io/boundless-lab/systems/influence): Opposition with no body: measured signals per sector qualify planted slots, pressure is computed and decays, and mandates go to disposable proxies that remember nothing.
+- [Bag network](https://techdevgroup.github.io/boundless-lab/systems/rngnet): An untrained, seeded transformer-shaped draw engine: it turns bag weights and draw history into probabilities, evening out where plain weighted sampling clumps.
 
 ### The look
 
 - [Palette and icon grammar](https://techdevgroup.github.io/boundless-lab/look/palette): Clearance bands from cool rim to amber core, and the shapes that carry meaning.
 
-### Systems
-
-- [Scan waves and masks](https://techdevgroup.github.io/boundless-lab/systems/scan-waves): A ping spreads cell by cell, walls stop it, identifiers echo back, and mask fields hide, garble or fake what is heard.
-- [Fog of war](https://techdevgroup.github.io/boundless-lab/systems/fog-of-war): Unseen, explored and visible from the avatar and the companion, with polygonal line of sight; pings are remembered for a moment without being seen.
-- Skills, modes and devices _(locked)_: Kinetic, hitscan and utility skills, modes that trade quiet for power, and grenades, mines and relays that reshape space.
-- Risk and consequence _(locked)_: Every spend has a price. See the cost before you commit, then live with what the network learns.
-- [The companion](https://techdevgroup.github.io/boundless-lab/systems/companion): One character and an AI follower: continuous fixed-step motion, any-angle routes, a companion that rendezvous back to its station, and standing orders.
-- The Ledger _(locked)_: The authority keeps a cheerful, ominous record of what it thinks you did. It is not always right.
-- The defenders _(locked)_: Sensors, responders and a hunt team that baseline what is normal, set traps, and harden what you used.
-- The board remembers you _(locked)_: Adversaries that learn your routes and habits, and named rivals that grow a grudge.
-- Sweeps _(locked)_: Scheduled pulses cross the board from the core. Read them, mask them, or sever the route.
-
-### Making of
+### The project
 
 - [Concept catalog](https://techdevgroup.github.io/boundless-lab/making/catalog): Every design approach, who owns it, and the proof behind it.
 - [The specialists](https://techdevgroup.github.io/boundless-lab/making/team): Twelve design disciplines, each with its own brief, working from one shared set of pillars.
-- [Dev log](https://techdevgroup.github.io/boundless-lab/making/devlog): A running record of what shipped and why.
+- [Status](https://techdevgroup.github.io/boundless-lab/making/status): What exists now, by pipeline stage, and what is next.
 
-The full list of 44 concepts with owners and proofs is in [CATALOG.md](CATALOG.md).
+The full list of 56 concepts with owners and proofs is in [CATALOG.md](CATALOG.md).
 
 > This repository is the **published build**. Source and design documents live in a private repository.
-> Built from source revision `06c8400` (+uncommitted changes) on 2026-10-27.
+> Built from source revision `a4f358f` (+uncommitted changes) on 2026-10-27.
