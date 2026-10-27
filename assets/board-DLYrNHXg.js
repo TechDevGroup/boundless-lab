@@ -1,1 +1,0 @@
-import{g as r}from"./mapgen-DANSV0rP.js";import{b as a}from"./liveConfig-etyzSpgR.js";const e=new Map,c=3;function f(s,i){const o=a(i),n=`${s}|${JSON.stringify(o)}`;let t=e.get(n);return t?(e.delete(n),e.set(n,t),t):(t=r(s,o),e.set(n,t),e.size>c&&e.delete(e.keys().next().value),t)}const l=()=>new Promise(s=>setTimeout(s,0));export{l as i,f as s};
