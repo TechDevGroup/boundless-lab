@@ -55,4 +55,4 @@ Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused
 The full list of 74 concepts with owners and proofs is in [CATALOG.md](CATALOG.md).
 
 > This repository is the **published build**. Source and design documents live in a private repository.
-> Built from source revision `abdbe40` on 2026-10-28.
+> Built from source revision `61d1fbf` (+uncommitted changes) on 2026-10-28.
