@@ -6,7 +6,7 @@
 Live, modular demos of **Boundless**, a paced top-down action RPG about crossing a hostile network.
 Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused, built on the live game configuration.
 
-18 pieces in 7 chapters · 38 proven concepts · 7 prototypes · 11 ideas.
+18 pieces in 7 chapters · 38 proven concepts · 7 prototypes · 27 ideas.
 
 ## Pieces
 
@@ -25,7 +25,7 @@ Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused
 
 ### Actors
 
-- [Movement, routes and the companion](https://techdevgroup.github.io/boundless-lab/actors/companion): The game actors in the game view: fixed 60 Hz motion, string-pulled routes, a follower that holds its station without teleporting, standing orders (T, Tab).
+- [Movement, routes and the companion](https://techdevgroup.github.io/boundless-lab/actors/companion): The game actors in the game view: fixed 60 Hz motion, string-pulled routes, a follower that holds its station without teleporting, standing orders (G, Tab).
 
 ### Perception
 
@@ -49,7 +49,7 @@ Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused
 - [The specialists](https://techdevgroup.github.io/boundless-lab/making/team): Twelve design disciplines, each with its own brief, working from one shared set of pillars.
 - [Status](https://techdevgroup.github.io/boundless-lab/making/status): What exists now, by pipeline stage, and what is next.
 
-The full list of 56 concepts with owners and proofs is in [CATALOG.md](CATALOG.md).
+The full list of 72 concepts with owners and proofs is in [CATALOG.md](CATALOG.md).
 
 > This repository is the **published build**. Source and design documents live in a private repository.
-> Built from source revision `481110b` (+uncommitted changes) on 2026-10-28.
+> Built from source revision `1d08dad` on 2026-10-28.

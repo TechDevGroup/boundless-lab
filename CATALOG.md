@@ -3,7 +3,7 @@
 
 _Generated from `src/lab/concepts.js` by `npm run catalog`. Do not edit by hand._
 
-**38 proven · 7 prototype · 11 idea** across 12 specialist owners.
+**38 proven · 7 prototype · 27 idea** across 12 specialist owners.
 
 A concept is *proven* only with a passing test or a live Lab piece.
 
@@ -65,3 +65,19 @@ A concept is *proven* only with a passing test or a live Lab piece.
 | idea | **Sweeps** | Influence | Scheduled pulses cross the board from the core; read them, mask them, or sever the route. | _not built yet_ |
 | idea | **Faction territories from cluster partitions** | Factions | Reuse the cluster and BSP partitioners to seed rival territories and borders. | _not built yet_ |
 | idea | **Missions as generation recipes** | Missions | A mission is recipe weights plus required sockets plus objectives, assembled from the library. | _not built yet_ |
+| idea | **Module and registry contract** | Design director | Content is rows in registries inside manifest-declared modules with declared dependencies; core is today content, any other module can be dropped and its feature is silently absent. See docs/design/moba-layer.md. | _not built yet_ |
+| idea | **Module ablation test** | Design director | A load-time dependency check plus an ablation test that removes each module and proves the rest still loads and plays; saves carry a content hash. | _not built yet_ |
+| idea | **Crowd-control categories as data** | Mechanics | Eight crowd-control categories (stun, root, slow, knockback, pull, silence, vision-deny, taunt-like) as status rows with a telegraph, counters and a symmetric cleanse. | _not built yet_ |
+| idea | **Diminishing returns and the hard-control cap** | Mechanics | A per-holder ladder (1, 0.5, 0.25, 0 over 8 s) and a hard-control cap of 2.2 s per 10 s, kept as transient state, never a memory of an individual. | _not built yet_ |
+| idea | **Terrain delta log** | Mechanics | Runtime terrain edits are an append-only per-chunk delta log over the seeded base, idempotent ids and a fixed fold order, so the generator is never mutated. | _not built yet_ |
+| idea | **Terrain manipulation ops** | Mechanics | Raise, lower, obstruct, unblock, wall, ramp, rift and pull as data rows; a wouldSever guard keeps gates, hub and landmarks walkable and sealed or rim borders closed. | _not built yet_ |
+| idea | **Implicit density field** | Terrain generation | A signed density field built from exact arithmetic on canonical vertex keys, giving protruding, canted and overhanging terrain that stays flush and idempotent. | _not built yet_ |
+| idea | **Marching-tetrahedra surface** | Terrain generation | The field is meshed with marching tetrahedra in a worker, precomputed during an edit telegraph; an early cost spike (F0) is the go/no-go gate. | _not built yet_ |
+| idea | **Layer links and traversal types** | Terrain generation | Layered connectivity with link types (walk, step, ramp, slide, climb, drop, jump, vault, grapple, blink); shortcuts only, never requirements. | _not built yet_ |
+| idea | **Locomotion techniques as data** | Mechanics | Mantling, slides on canted surfaces, drop-down attacks, momentum and light-line grinds as rows over the vertical field. | _not built yet_ |
+| idea | **Fielded structures** | Influence | Structures are Influence output: fixtures and mandate counters with no identity or memory. | _not built yet_ |
+| idea | **Wave mandates** | Influence | Lane-like waves are mandates to disposable proxies, positioned in closed form from time. | _not built yet_ |
+| idea | **Control field** | Influence | Map control is a measured reading over aggregate signals, never a score a proxy remembers. | _not built yet_ |
+| idea | **Faction rows** | Factions | Factions as registry rows scoping loadout pools, programmes and encounter tables. | _not built yet_ |
+| idea | **Encounter budgets** | Missions | Encounter tables drawn by budget from faction and zone rows, seeded by the run seed. | _not built yet_ |
+| idea | **Run seeds and terms** | Missions | worldSeed fixes the Board; runSeed fixes programmes, encounters and offers; seasons and terms are data. Meta is blueprints, mods, archive and Ledger carry only. | _not built yet_ |
