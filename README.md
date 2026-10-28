@@ -19,19 +19,19 @@ Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused
 - [The site field](https://techdevgroup.github.io/boundless-lab/world/site-field): One hashed site per lattice cell, shown on the live terrain. Jitter and window size are the controlled variables; neighbouring sectors generated alone share every border edge.
 - [Generation passes](https://techdevgroup.github.io/boundless-lab/world/passes): Cells and sectors, the coarse graph, wall bands with gate bridges, area styles, curtains and openings, smoothing: step through the passes on the live terrain, then try any density preset.
 - [Sector partitions](https://techdevgroup.github.io/boundless-lab/world/partitions): The hex lattice and its domain-warped organic variant side by side on the otherwise live configuration (the partition is the one variable), with measured connectivity guarantees, outline shape and wall share (computed in a worker).
-- [Level layer](https://techdevgroup.github.io/boundless-lab/world/level): The level layer of the live game: zones dealt from seeded decks, field fences with gaps and posts, and stamped fixtures; the window grows ring by ring, as a player would stream it.
-- [Sectors and gates](https://techdevgroup.github.io/boundless-lab/world/sectors-gates): The live board: walled sector borders, gates only where they mean something, solid obstacles and a sealed core. Click any cell to route to it.
-- [The Network Board](https://techdevgroup.github.io/boundless-lab/world/glass-board): The live board in 3D: glass tiles, glowing walls and contoured wall masses. Run to light the board; click it to take the camera.
+- [Level layer](https://techdevgroup.github.io/boundless-lab/world/level): The level layer in the live game: zones dealt from seeded decks, field fences with gaps and posts, stamped fixtures, in the streamed world and the game view. Run it, walk on, and measure the ring.
+- [Sectors and gates](https://techdevgroup.github.io/boundless-lab/world/sectors-gates): The live board in the game view: walled sector borders, gates only where they mean something, solid obstacles and a sealed core. Click any cell to route the avatar.
+- [The Network Board](https://techdevgroup.github.io/boundless-lab/world/glass-board): The live board in 3D from the game stage: glass tiles, glowing walls and contoured wall masses, with the game Display and Dev sliders. Run to start it; click the board to route.
 
 ### Actors
 
-- [Movement, routes and the companion](https://techdevgroup.github.io/boundless-lab/actors/companion): Fixed 60 Hz motion drawn between ticks, funnelled and string-pulled any-angle routes across the live board, a follower that holds its station without teleporting, and standing orders.
+- [Movement, routes and the companion](https://techdevgroup.github.io/boundless-lab/actors/companion): The game actors in the game view: fixed 60 Hz motion, string-pulled routes, a follower that holds its station without teleporting, standing orders (T, Tab).
 
 ### Perception
 
-- [Scan waves and echoes](https://techdevgroup.github.io/boundless-lab/perception/scan-waves): A ping spreads over the live board's cell graph; each source it reaches answers with a second wave, replayed backwards to the listener. Mask fields hide, garble or fake what returns.
-- [Fog of war](https://techdevgroup.github.io/boundless-lab/perception/fog-of-war): Unseen, explored and visible from the avatar and the companion by polygonal line of sight on the live board; a ping is remembered for a moment without being seen.
-- [Streaming the unbounded world](https://techdevgroup.github.io/boundless-lab/perception/streaming): A walker crosses the live world while sectors are generated ahead of it by tier (coarse, nav, render, detail) under a per-frame budget; a far route touches only the sectors it crosses.
+- [Scan waves and echoes](https://techdevgroup.github.io/boundless-lab/perception/scan-waves): The game scan view on the streamed world: ping as often as you like (Ping x5, Auto ping), waves overlap freely, each source answers with a second wave, and the fog remembers strong cells. The cooldown and wave cap are the game settings.
+- [Fog of war](https://techdevgroup.github.io/boundless-lab/perception/fog-of-war): The game fog on the streamed world: reveal by flood distance and line of sight from the avatar and the companion, ghost fade and ping memory. Walk on explores by itself, Auto ping scans as it goes, and presets set the game fog sliders.
+- [Streaming the unbounded world](https://techdevgroup.github.io/boundless-lab/perception/streaming): A showcase of the game stream map, board and ring policy: a free camera (drag, seeded fly tour at many times walking speed, shuttle, jump 400 units) drives the stream, the real plan is drawn over the board as colour-coded sectors and radius circles, live counters read the build rate and plan time, and presets set the ring sliders (tight, wide, thrash against a big band, look-ahead, bulk load).
 
 ### Systems
 
@@ -52,4 +52,4 @@ Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused
 The full list of 56 concepts with owners and proofs is in [CATALOG.md](CATALOG.md).
 
 > This repository is the **published build**. Source and design documents live in a private repository.
-> Built from source revision `a4f358f` (+uncommitted changes) on 2026-10-27.
+> Built from source revision `481110b` (+uncommitted changes) on 2026-10-28.
