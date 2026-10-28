@@ -3,7 +3,7 @@
 
 _Generated from `src/lab/concepts.js` by `npm run catalog`. Do not edit by hand._
 
-**38 proven · 7 prototype · 27 idea** across 12 specialist owners.
+**40 proven · 7 prototype · 25 idea** across 12 specialist owners.
 
 A concept is *proven* only with a passing test or a live Lab piece.
 
@@ -47,6 +47,8 @@ A concept is *proven* only with a passing test or a live Lab piece.
 | proven | **Compositional loadouts and the build solver** | Mechanics | Cores, typed slots, bulk, mods that rewrite skills, tag synergies and ranks; edits roll back if invalid; a solver audits random builds against balance bounds. | [live](https://techdevgroup.github.io/boundless-lab/systems/mechanics)<br>test: test/mechanics-loadout.test.js |
 | proven | **Level zones with intent and pacing** | Terrain generation | Field, plaza, ruin, cavern, fortress and corridor-hold dealt from seeded decks; holds never touch and open ground rings every hold; heavy walls only in caverns and fortresses; the same window in any generation order is identical. | [live](https://techdevgroup.github.io/boundless-lab/world/level)<br>test: test/level.test.js |
 | proven | **Seeded decks (weighted, nested, with rules)** | Terrain generation | Cards with weights as copies, drawn without replacement and reshuffled, nested sub-decks, spacing and guarantee rules, snapshot and restore; flat decks are also random access. Generic, so mechanics and Influence can adopt it. | [live](https://techdevgroup.github.io/boundless-lab/world/level)<br>test: test/deck.test.js |
+| proven | **Module and registry contract** | Design director | Content is typed rows in registries, declared by manifest modules with requires, optional references, conflicts and overrides. The loader orders modules, drops rows whose hard references or capabilities are missing, nulls soft references, sorts every registry by id and returns a content hash. The example set is stand-in content, not yet wired into the game. See docs/design/moba-layer.md. | [live](https://techdevgroup.github.io/boundless-lab/systems/module-registry)<br>test: test/modules.test.js: the example set loads strictly, in dependency order, with its expected soft nulls |
+| proven | **Module ablation test** | Design director | Removing any removable module drops exactly the rows that depended on it, leaves no dangling reference and changes no survivor's content. An independent oracle over the raw manifests agrees, and the content hash moves with the set. | [live](https://techdevgroup.github.io/boundless-lab/systems/module-ablation)<br>test: test/modules-ablation.test.js: removing a module drops exactly its dependants, leaves no dangling reference, survivors unchanged |
 | prototype | **Area styles: plaza, ruins, rooms, hall, cavern** | Terrain generation | Each sector is one kind of area, drawn from a per-region style mix with a per-clearance bias; styles paint only inner cells and carry their own room-size ranges. Tuned by eye on the presets, not yet by play. | [live](https://techdevgroup.github.io/boundless-lab/world/passes) |
 | prototype | **Sight-radius fog preview** | Interaction | Cells re-tint by distance from the player; the real fog system is not built yet. | [live](https://techdevgroup.github.io/boundless-lab/world/glass-board) |
 | prototype | **Icon grammar** | Items and icons | Shape carries meaning, colour is semantic, everything reads in monochrome. | [live](https://techdevgroup.github.io/boundless-lab/look/palette) |
@@ -65,8 +67,6 @@ A concept is *proven* only with a passing test or a live Lab piece.
 | idea | **Sweeps** | Influence | Scheduled pulses cross the board from the core; read them, mask them, or sever the route. | _not built yet_ |
 | idea | **Faction territories from cluster partitions** | Factions | Reuse the cluster and BSP partitioners to seed rival territories and borders. | _not built yet_ |
 | idea | **Missions as generation recipes** | Missions | A mission is recipe weights plus required sockets plus objectives, assembled from the library. | _not built yet_ |
-| idea | **Module and registry contract** | Design director | Content is rows in registries inside manifest-declared modules with declared dependencies; core is today content, any other module can be dropped and its feature is silently absent. See docs/design/moba-layer.md. | _not built yet_ |
-| idea | **Module ablation test** | Design director | A load-time dependency check plus an ablation test that removes each module and proves the rest still loads and plays; saves carry a content hash. | _not built yet_ |
 | idea | **Crowd-control categories as data** | Mechanics | Eight crowd-control categories (stun, root, slow, knockback, pull, silence, vision-deny, taunt-like) as status rows with a telegraph, counters and a symmetric cleanse. | _not built yet_ |
 | idea | **Diminishing returns and the hard-control cap** | Mechanics | A per-holder ladder (1, 0.5, 0.25, 0 over 8 s) and a hard-control cap of 2.2 s per 10 s, kept as transient state, never a memory of an individual. | _not built yet_ |
 | idea | **Terrain delta log** | Mechanics | Runtime terrain edits are an append-only per-chunk delta log over the seeded base, idempotent ids and a fixed fold order, so the generator is never mutated. | _not built yet_ |

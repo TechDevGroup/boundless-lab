@@ -6,7 +6,7 @@
 Live, modular demos of **Boundless**, a paced top-down action RPG about crossing a hostile network.
 Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused, built on the live game configuration.
 
-18 pieces in 7 chapters · 38 proven concepts · 7 prototypes · 27 ideas.
+20 pieces in 7 chapters · 40 proven concepts · 7 prototypes · 25 ideas.
 
 ## Pieces
 
@@ -38,6 +38,8 @@ Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused
 - [Mechanics session](https://techdevgroup.github.io/boundless-lab/systems/mechanics): Integrity, Cycles and Exposure move as skills are used; the risk preview agrees with the result, consequences fill a ledger, and loot is a source, not a tree.
 - [Influence layer](https://techdevgroup.github.io/boundless-lab/systems/influence): Opposition with no body: measured signals per sector qualify planted slots, pressure is computed and decays, and mandates go to disposable proxies that remember nothing.
 - [Bag network](https://techdevgroup.github.io/boundless-lab/systems/rngnet): An untrained, seeded transformer-shaped draw engine: it turns bag weights and draw history into probabilities, evening out where plain weighted sampling clumps.
+- [Modules and registries](https://techdevgroup.github.io/boundless-lab/systems/module-registry): The example module set as the loader sees it: load order, the registries and their rows, the load report and the content hash. Switch a removable module off to see what cascades, and pick a row for a seed and a scope.
+- [Removal ablation](https://techdevgroup.github.io/boundless-lab/systems/module-ablation): Run removes each removable module in turn, then all of them together, and checks what is left: rows lost with their reasons, dangling references, whether every survivor is unchanged, and whether an independent oracle agrees.
 
 ### The look
 
@@ -52,4 +54,4 @@ Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused
 The full list of 72 concepts with owners and proofs is in [CATALOG.md](CATALOG.md).
 
 > This repository is the **published build**. Source and design documents live in a private repository.
-> Built from source revision `1d08dad` on 2026-10-28.
+> Built from source revision `576b092` (+uncommitted changes) on 2026-10-28.
