@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
     <title>Boundless</title>
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-    <script type="module" crossorigin src="/boundless-lab/assets/play-cTBjZsZh.js"></script>
+    <style>
+      /* the start readout: shown until main.js has pre-built the ground around the start (src/view/streamBoard.js prewarmStart) */
+      #loading { position: fixed; inset: 0; display: grid; place-items: center; background: #05080c; color: #8ffcff; z-index: 20;
+        font: 13px/1.4 system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
+    </style>
+    <script type="module" crossorigin src="/boundless-lab/assets/play-BqqThC3r.js"></script>
     <link rel="modulepreload" crossorigin href="/boundless-lab/assets/perf-BrRVomqh.js">
-    <link rel="modulepreload" crossorigin href="/boundless-lab/assets/hash-C4tgqU_R.js">
+    <link rel="modulepreload" crossorigin href="/boundless-lab/assets/hash-B0x7w85k.js">
     <link rel="modulepreload" crossorigin href="/boundless-lab/assets/rng-BKYMqjzS.js">
-    <link rel="modulepreload" crossorigin href="/boundless-lab/assets/client-DxCleCfI.js">
-    <link rel="modulepreload" crossorigin href="/boundless-lab/assets/session-CQ0HZyEY.js">
+    <link rel="modulepreload" crossorigin href="/boundless-lab/assets/client-C23RkIwE.js">
+    <link rel="modulepreload" crossorigin href="/boundless-lab/assets/session-CWjth9eO.js">
+    <link rel="modulepreload" crossorigin href="/boundless-lab/assets/three.module-CKcq0cLQ.js">
     <link rel="modulepreload" crossorigin href="/boundless-lab/assets/palette-DlZOkp1f.js">
-    <link rel="modulepreload" crossorigin href="/boundless-lab/assets/streamMap-BbyQ3NBd.js">
-    <link rel="stylesheet" crossorigin href="/boundless-lab/assets/play-CWdQl9OQ.css">
+    <link rel="modulepreload" crossorigin href="/boundless-lab/assets/streamMap-DopLoGmn.js">
+    <link rel="stylesheet" crossorigin href="/boundless-lab/assets/play-BSqdSNwZ.css">
   </head>
   <body>
+    <div id="loading" role="status" aria-live="polite"><span id="loadText">Building the ground</span></div>
     <canvas id="stage"></canvas>
     <a id="back" href="../">&larr; Lab</a>
     <div id="hud">

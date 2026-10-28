@@ -6,7 +6,7 @@
 Live, modular demos of **Boundless**, a paced top-down action RPG about crossing a hostile network.
 Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused, built on the live game configuration.
 
-20 pieces in 7 chapters · 40 proven concepts · 7 prototypes · 25 ideas.
+21 pieces in 7 chapters · 41 proven concepts · 10 prototypes · 23 ideas.
 
 ## Pieces
 
@@ -22,6 +22,7 @@ Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused
 - [Level layer](https://techdevgroup.github.io/boundless-lab/world/level): The level layer in the live game: zones dealt from seeded decks, field fences with gaps and posts, stamped fixtures, in the streamed world and the game view. Run it, walk on, and measure the ring.
 - [Sectors and gates](https://techdevgroup.github.io/boundless-lab/world/sectors-gates): The live board in the game view: walled sector borders, gates only where they mean something, solid obstacles and a sealed core. Click any cell to route the avatar.
 - [The Network Board](https://techdevgroup.github.io/boundless-lab/world/glass-board): The live board in 3D from the game stage: glass tiles, glowing walls and contoured wall masses, with the game Display and Dev sliders. Run to start it; click the board to route.
+- [The density field in chunks](https://techdevgroup.github.io/boundless-lab/world/field-chunks): Relief, ledges and overhangs as one density field, sampled in chunks on a lattice you choose, meshed with marching tetrahedra and probed for walkable floors. A worker builds a 3 by 3 window; Run draws it with the timings and link counts.
 
 ### Actors
 
@@ -51,7 +52,7 @@ Every piece is a stepped, interactive demo (Run, Step, Reset) that starts paused
 - [The specialists](https://techdevgroup.github.io/boundless-lab/making/team): Twelve design disciplines, each with its own brief, working from one shared set of pillars.
 - [Status](https://techdevgroup.github.io/boundless-lab/making/status): What exists now, by pipeline stage, and what is next.
 
-The full list of 72 concepts with owners and proofs is in [CATALOG.md](CATALOG.md).
+The full list of 74 concepts with owners and proofs is in [CATALOG.md](CATALOG.md).
 
 > This repository is the **published build**. Source and design documents live in a private repository.
-> Built from source revision `934b19d` on 2026-10-28.
+> Built from source revision `abdbe40` on 2026-10-28.
