@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "base": "/boundless-lab/shardfall/",
+  "source": {
+    "repo": "boundless",
+    "commit": "6781aefd0ec39efe97ce84bc804114696f703fa0",
+    "dirty": false
+  },
+  "built_at": "2026-10-31T14:54:56.978Z",
+  "files": [
+    {
+      "path": "assets/shardfall-BSqdSNwZ.css",
+      "bytes": 21241,
+      "sha256": "e1ad394f9e7b4e71432be374d47bd286b12ca0a90d4da868be0affcbf736b860"
+    },
+    {
+      "path": "assets/shardfall-DNonravS.js",
+      "bytes": 1107562,
+      "sha256": "3aded9988f472e6b694c5056c433f7fa7bced78861da82ffa454d273629d9925"
+    },
+    {
+      "path": "assets/worker-kJ5ceAt4.js",
+      "bytes": 239913,
+      "sha256": "514a112e7bf710e35455876c5177792c1491e72ee7a335d11faa3c1a3f7794b0"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 247,
+      "sha256": "0bc030cab9400b9fcf8885ad5effcdc61bd3444bd5f8532cf83287bba756827b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1246,
+      "sha256": "a3008f9e649510dfff8ca790e74c0286952137c80d9baa5fd0e7e4c6af09fe99"
+    }
+  ]
+}
