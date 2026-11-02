@@ -3,15 +3,15 @@
   "base": "/boundless-lab/shardfall/",
   "source": {
     "repo": "boundless",
-    "commit": "2b23f5713dfc8f141aa8e6c888a2c2da236aa1bf",
+    "commit": "9c78bf634696e9658d515f73a4835f2c2ae16894",
     "dirty": false
   },
-  "built_at": "2026-11-02T12:26:18.933Z",
+  "built_at": "2026-11-02T15:56:28.530Z",
   "files": [
     {
-      "path": "assets/arenaPage-BUY1PDsf.js",
-      "bytes": 252642,
-      "sha256": "f55770df1c5c5e4b9b9b537f895768de9ca5bb3d795107ed92f06433001398db"
+      "path": "assets/arenaPage-BbFidb5X.js",
+      "bytes": 257149,
+      "sha256": "52d377c57b5f057f7eb52e50ece0ee92ec1242c4bafbdadc9d121cfd710a3cae"
     },
     {
       "path": "assets/arenaPage-DZR0EBzX.css",
@@ -19,14 +19,9 @@
       "sha256": "1dc63c61b9e97fdd9aa284ca1d61969f67af55b0811c6fc4856437af48575e94"
     },
     {
-      "path": "assets/previewStage-DBDRP9GO.js",
-      "bytes": 13260,
-      "sha256": "e1f3284264e27c584857fe016248591b9147fdb84a649eff7da0885c354db81a"
-    },
-    {
-      "path": "assets/shardfall-BVYV-Cq6.js",
-      "bytes": 1303678,
-      "sha256": "bceffa50336ee4c73e275b11be131cc685eea071d42ddd0cfc2e64a4d9f0dfd0"
+      "path": "assets/previewStage-C-_ow99A.js",
+      "bytes": 13257,
+      "sha256": "0a07de3018aaa6ac24ea4842a4d3011b09e6483d10b710a689492e291a5add4f"
     },
     {
       "path": "assets/shardfall-CBsBhd2r.css",
@@ -34,9 +29,14 @@
       "sha256": "d318220117897597144e583ac7e31df5a5f24655fb69681a556ebe2b624bf511"
     },
     {
-      "path": "assets/worker-j2tRzYZA.js",
-      "bytes": 289468,
-      "sha256": "c85bfe341c76db5e23e8ab1bdf780ffba1e463ef00c43b7cc52335edabf87287"
+      "path": "assets/shardfall-lxZa9yqB.js",
+      "bytes": 1325759,
+      "sha256": "5bba693f875e60c194db6db8d1871f5fea2b5432ee9789afaee5774fce6fc817"
+    },
+    {
+      "path": "assets/worker-ZIOsk6wj.js",
+      "bytes": 308018,
+      "sha256": "3d66f28b36ec64c548d8b9826ea9fb02cde23c727cce0ce7b5c970f73c354f9d"
     },
     {
       "path": "favicon.svg",
@@ -46,7 +46,7 @@
     {
       "path": "index.html",
       "bytes": 1246,
-      "sha256": "c0fe18283d64253e64cc3d4aa1dad658d445afdfed87400ff23936403f3ae271"
+      "sha256": "76632f78a873206df24827967df3c9e0ab19cf2609822a4852b1953bec321a81"
     }
   ]
 }
