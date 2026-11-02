@@ -3,15 +3,15 @@
   "base": "/boundless-lab/shardfall/",
   "source": {
     "repo": "boundless",
-    "commit": "9c78bf634696e9658d515f73a4835f2c2ae16894",
+    "commit": "007eb7b3dcb72c96e8a82911f73539969e1f4b05",
     "dirty": false
   },
-  "built_at": "2026-11-02T15:56:28.530Z",
+  "built_at": "2026-11-02T17:19:45.471Z",
   "files": [
     {
-      "path": "assets/arenaPage-BbFidb5X.js",
-      "bytes": 257149,
-      "sha256": "52d377c57b5f057f7eb52e50ece0ee92ec1242c4bafbdadc9d121cfd710a3cae"
+      "path": "assets/arenaPage-CSXNn136.js",
+      "bytes": 265156,
+      "sha256": "1e65502881e8c6d281e234b40c0abc137e0d3c6358c0928ba373b17e36128790"
     },
     {
       "path": "assets/arenaPage-DZR0EBzX.css",
@@ -19,9 +19,9 @@
       "sha256": "1dc63c61b9e97fdd9aa284ca1d61969f67af55b0811c6fc4856437af48575e94"
     },
     {
-      "path": "assets/previewStage-C-_ow99A.js",
+      "path": "assets/previewStage-C-DohtzN.js",
       "bytes": 13257,
-      "sha256": "0a07de3018aaa6ac24ea4842a4d3011b09e6483d10b710a689492e291a5add4f"
+      "sha256": "2e925084864735fd6859d1d5baf6b605192118622407879fdc3b3928a445ae88"
     },
     {
       "path": "assets/shardfall-CBsBhd2r.css",
@@ -29,14 +29,14 @@
       "sha256": "d318220117897597144e583ac7e31df5a5f24655fb69681a556ebe2b624bf511"
     },
     {
-      "path": "assets/shardfall-lxZa9yqB.js",
-      "bytes": 1325759,
-      "sha256": "5bba693f875e60c194db6db8d1871f5fea2b5432ee9789afaee5774fce6fc817"
+      "path": "assets/shardfall-DxfotDxS.js",
+      "bytes": 1326493,
+      "sha256": "d901f9f161b2f387f80faf0cf2875f67ed75f69e4e72b49f3c656c36ff5e1f5a"
     },
     {
-      "path": "assets/worker-ZIOsk6wj.js",
-      "bytes": 308018,
-      "sha256": "3d66f28b36ec64c548d8b9826ea9fb02cde23c727cce0ce7b5c970f73c354f9d"
+      "path": "assets/worker-BZ87pihY.js",
+      "bytes": 308359,
+      "sha256": "8edf1e9b8991dcb4c436551aecb654dd19a6870fbd836f012744829c5c2e87f3"
     },
     {
       "path": "favicon.svg",
@@ -46,7 +46,7 @@
     {
       "path": "index.html",
       "bytes": 1246,
-      "sha256": "76632f78a873206df24827967df3c9e0ab19cf2609822a4852b1953bec321a81"
+      "sha256": "8cf05e36f3bff4dabfda28cb6077846b55772a5fd9e91f9de242aff70d2fc35d"
     }
   ]
 }
