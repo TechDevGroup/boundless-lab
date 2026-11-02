@@ -3,30 +3,30 @@
   "base": "/boundless-lab/shardfall/",
   "source": {
     "repo": "boundless",
-    "commit": "28cfa11ad53dc004cfdd19fa66d37906c79fe1bc",
+    "commit": "67419f7dd48d23a6712c023eb149a0861539aa04",
     "dirty": false
   },
-  "built_at": "2026-11-01T21:59:58.302Z",
+  "built_at": "2026-11-02T02:50:34.030Z",
   "files": [
     {
-      "path": "assets/arenaPage-D41S3r0N.css",
-      "bytes": 22027,
-      "sha256": "9ac068c83ae3c152bd127068e408bff5ad99801a191f02aff955136946c4295a"
+      "path": "assets/arenaPage-BvC6j2-M.js",
+      "bytes": 222050,
+      "sha256": "13817f0b8f048c7c1f8cafd31358e1558fa83f9ac997d6fd3bb5652e7a57f238"
     },
     {
-      "path": "assets/arenaPage-DRyW12NN.js",
-      "bytes": 203801,
-      "sha256": "b8cd5fe77985c65a5361ef5b41d3170c76bd62f1cd618328dca859b95c9dce5b"
+      "path": "assets/arenaPage-DZR0EBzX.css",
+      "bytes": 22047,
+      "sha256": "1dc63c61b9e97fdd9aa284ca1d61969f67af55b0811c6fc4856437af48575e94"
     },
     {
-      "path": "assets/previewStage-BPc8rbpT.js",
-      "bytes": 11144,
-      "sha256": "f04454d87291276dc5a53c3e24e9c3a52dd572a523e74fcef7bd660f8121967b"
+      "path": "assets/previewStage-BN4OyDoA.js",
+      "bytes": 13260,
+      "sha256": "313f79903dc3fa83b21803bbedca61bec7a477cc38996dab60a99d5b169db626"
     },
     {
-      "path": "assets/shardfall-BY3mA0Jb.js",
-      "bytes": 1245095,
-      "sha256": "99dedb3b872a2add8407440fd70ca59d635f4b51de49e4016744a8e042e5e5b5"
+      "path": "assets/shardfall-B2R1t8Gp.js",
+      "bytes": 1253308,
+      "sha256": "8bc872c9cad8bdd4c57e3b7c3397c18ba2aa0840d23bf794229274c014fe9a04"
     },
     {
       "path": "assets/shardfall-CBsBhd2r.css",
@@ -34,9 +34,9 @@
       "sha256": "d318220117897597144e583ac7e31df5a5f24655fb69681a556ebe2b624bf511"
     },
     {
-      "path": "assets/worker-BxsDfobs.js",
-      "bytes": 263595,
-      "sha256": "426c1f2b1d095c19461cacd97a056173109a3ed67bccf48f4d8b4b81c7bcd76d"
+      "path": "assets/worker-TSuJkwyf.js",
+      "bytes": 271899,
+      "sha256": "c1874cad796c734b86a1b4552d76751a2a9a1cdc345706c887b76041dc8f9359"
     },
     {
       "path": "favicon.svg",
@@ -46,7 +46,7 @@
     {
       "path": "index.html",
       "bytes": 1246,
-      "sha256": "82612d90daaa1e0c4c4c14f206961eed6f6f1fdc278b2fa66d6d685ca22814b7"
+      "sha256": "1faa9cfc99be0a62c566c5f07f39e341f1c1b73dea992de7b4b0f134150b9dd2"
     }
   ]
 }
