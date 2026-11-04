@@ -1,4 +1,4 @@
-import{C as ko,a as Uc}from"./palette-DlZOkp1f.js";import{D as ni,k as Ic,d as Lr,w as Nc,p as Fc}from"./client-CQ3kL7u0.js";/**
+import{C as ko,a as Uc}from"./palette-DlZOkp1f.js";import{D as ni,n as Ic,d as Lr,w as Nc,s as Fc}from"./client-CFLZb6oh.js";/**
  * @license
  * Copyright 2010-2024 Three.js Authors
  * SPDX-License-Identifier: MIT
